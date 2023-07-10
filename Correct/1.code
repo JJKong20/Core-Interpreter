@@ -1,0 +1,7 @@
+program {
+	int x;
+begin {
+	ref y;
+	y = new instance;
+	y = 10;
+}}

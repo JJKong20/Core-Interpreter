@@ -1,0 +1,18 @@
+program {
+	int m, n;
+	A(ref x) { 
+		ref y; 
+		y = new instance; 
+		y = 8; 
+		output(x); 
+		x = share y; 
+	}
+begin {
+	m = 10;
+	n = 5;
+	ref z;
+	z = new instance;
+	z = m+n;
+	begin A(z);
+	output(m);
+}}
